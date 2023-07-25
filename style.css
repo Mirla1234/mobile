@@ -1,0 +1,158 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.logo{
+  padding: 32px 124px 110px 120px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 137px;
+  margin-left: auto;
+  position: relative;
+
+ 
+  
+
+ 
+}
+
+
+body{
+  background-color: #EFF1FF;
+  width: 100%;
+  height: 1995px;
+  
+  
+ 
+}
+
+body::before{
+  content: '';
+  width: 100%;
+  height: 279px;
+  position: absolute;
+  background: #8E9AAF;
+  z-index: -1;
+  display: flex;
+  
+
+}
+
+header::before, .dois {
+  width: 100%;
+  height: 49px;
+  content: '';
+  
+  
+  background-color:#CBC0D3;
+  z-index: 0;
+  left: 0px;
+  top: 201px;
+  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+  position: absolute;
+  
+}
+
+
+
+p{
+  
+  margin-left: auto;
+  margin-top: 200px;
+  margin-bottom: 63px;
+  font-family: 'Palanquin', sans-serif;
+  
+  display: flex;
+  font-size: 20;
+  
+  width: 305px;
+  height: 75px;
+  text-align: center;
+ 
+  align-items: center;
+  
+
+}
+
+.wrapper{
+  width: 320px;
+  height: 1642px;
+  margin: 14px auto 60px;
+}
+
+.card{
+  position: relative;
+  margin-bottom: 36px;
+  margin-left: auto;
+ 
+}
+
+.card h2 span{
+  border-radius: 20px;
+  background-color: #FEEAFA;
+  font-family: 'Staatliches'sans-serif;
+  line-height: 34px;
+  letter-spacing: 5%;
+  
+  color: #4A4E69;
+  font-size: 17px;
+  font-weight: 400px;
+  
+  position: absolute;
+  display: flex;
+  top: 17px;
+  right: 16px;
+  padding: 1px 18px 23px;
+
+  width: 112px;
+  height: 35px;
+
+  animation-name: topdown;
+  animation-duration: 1000ms;
+  
+}
+  
+ .card h2{
+  text-align: left;
+ } 
+
+img{
+  animation-name: downtop;
+  animation-duration: 2000ms;
+
+}
+
+
+ @keyframes topdown{
+  0%{
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+ }
+
+ @keyframes downtop{
+  0%{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+ }
